@@ -1,0 +1,4 @@
+address=http://people.eecs.berkeley.edu/~jordan/prelims/
+file_name=chapter
+file_numbers=2-7,10-13,15,17
+file_extension=pdf
