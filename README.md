@@ -3,7 +3,7 @@
 Have you ever had to download a list of files from a webpage? A situation similar to this:
 
 <br>
-<img height = "300" width = "550" src = "https://github.com/CalvinTChi/Downloader/blob/master/pic1.png" />
+<img height = "300" width = "300" src = "https://github.com/CalvinTChi/Downloader/blob/master/pic1.png" />
 <br>
 
 Manually downloading each file is time-consuming and inefficient, and `Downloader` is a simple python script that allows you to automate this process. As an overview, `Downloader` requires as input:
