@@ -46,14 +46,23 @@ def main(argv):
 			print("Make sure field names are 'address', 'file_name', 'file_numbers', 'file_extension'")
 			sys.exit(1)
 	for i in numbers:
-		address = location + filename + str(i) + "." + extension
+		if "*" in filename:
+			filename2 = filename.split("*")
+			address = location + filename2[0] + str(i) + filename2[1] + "." + extension
+		else:
+			address = location + filename + str(i) + "." + extension
+		print(address)
 		try:
 			response = urllib.request.urlopen(address)
 		except:
 			print("Invalid address")
 			continue
 		try:
-			f = open(outputDir + filename + str(i) + "." + extension, "wb")
+			if "*" in filename:
+				outputname = filename2[0] + str(i) + filename2[1] + "." + extension
+			else:
+				outputname = filename + str(i) + "." + extension
+			f = open(outputDir + outputname, "wb")
 			f.write(response.read())
 			f.close()
 		except: 
