@@ -14,7 +14,9 @@ Manually downloading each file is time-consuming and inefficient, and `Downloade
 4. File extension
 5. Directory to download files to
 
-To clarify points 2, 3, and 4, if the files you want to download are `chapter1.pdf`, `chapter2.pdf`, and `chapter3.pdf`, then name of the file would be `chapter`, file numbers would be `1-3`, and file extension would be `pdf`. Let us delve into the precise usage.
+To clarify points 2, 3, and 4, if the files you want to download are `chapter1.pdf`, `chapter2.pdf`, and `chapter3.pdf`, then name of the file would be `chapter`, file numbers would be `1-3`, and file extension would be `pdf`. 
+
+What if the numbering is within a filename rather than at the end of the filename? Don't worry, the position of the numbering can be specified with a `*` in the name of the file. For example, if the file names are `hw1_stat.pdf`, `hw2_stat.pdf`...etc, the `Name of file` field in the input file would be `hw*_stat`. However, only use `*` when the numbering is within the name of the file. Let us delve into the precise usage.
 
 # Usage
 A typical usage of `Downloader` looks like this:
